@@ -7,7 +7,6 @@ prompt_input_yN()
         read YN
         case ${YN} in
             [Yy]* ) printf "\n"; return 0; break;;
-            '' ) return 1; break;;
             * ) printf "\n"; return 1; break;;
         esac
     done
